@@ -7,24 +7,24 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-CA"
+locale                   : "en-US"
 title                    : "Maria Fernanda Ribeiro"
 title_separator          : "-"
 name                     : &name "Maria Fernanda Ribeiro"
 description              : &description "personal description"
-url                      : https://mfernandar95.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://mfernandar95.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "mfernandar95/mfernandar95.github.io"
+repository               : "mfernandar95/mfernandar95.github.io/"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.jpg"
-  name             : "Maria Ribeiro"
+  avatar           : "profile.jpg"
+  name             : "Maria Fernanda Ribeiro"
   pronouns         : "she/her  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Data scientist"
   location         : "Edmonto, AB, CA"
   employer         : # Red Brick University
   uri              : # URL
@@ -76,12 +76,12 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
- # books:
- #   title: 'Books'
- # manuscripts:
- #   title: 'Journal Articles'    
- # conferences:
- #   title: 'Conference Papers'
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -146,7 +146,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google-universal" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
 
@@ -298,18 +298,18 @@ timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
-  - jemoji
-
-# Mimic GitHub Pages with --safe
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+# mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
   - jemoji
 
 
